@@ -2,19 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Group Utilities */
-.accordion {
-  @apply bg-[#eee] text-[#444] cursor-pointer w-full text-left text-[15px] transition-[0.4s] p-5 border-none  border-[1_0_solid_black] outline-0;
+@layer components {
+  /* Group Utilities */
+  .accordion {
+    @apply bg-[#eee] text-[#444] cursor-pointer w-full text-left text-[15px] transition-[0.4s] p-5 border-none  border-[1_0_solid_black] outline-0;
+  }
+  .panel {
+    @apply bg-[white] max-h-0 overflow-hidden transition-[max-height] duration-[0.2s] ease-[ease-out] px-5 text-left text-xs leading-6;
+  }
+  .button-value {
+    @apply bg-transparent border-none text-base cursor-pointer px-2 py-1 text-zinc-400;
+  }
+  .active-border {
+    @apply text-[rgb(44,42,42)] border-b border-solid border-[rgb(44,42,42)];
+  }
+  .card {
+    @apply h-[400px] bg-white max-w-[18em] shadow-[0_5px_10px_rgba(0,0,0,0.1)] mt-[1em] mx-0 my-5 p-[1em] rounded-[5px];
+  }
 }
-.panel {
-  @apply bg-[white] max-h-0 overflow-hidden transition-[max-height] duration-[0.2s] ease-[ease-out] px-5 text-left text-xs leading-6;
-}
-.button-value {
-  @apply bg-transparent border-none text-base cursor-pointer px-2 py-1 text-zinc-400;
-}
-.active-border {
-  @apply text-[rgb(44,42,42)] border-b border-solid border-[rgb(44,42,42)];
-}
-.card {
-  @apply h-[400px] bg-white max-w-[18em] shadow-[0_5px_10px_rgba(0,0,0,0.1)] mt-[1em] mx-0 my-5 p-[1em] rounded-[5px];
+
+@layer base {
+  @font-face {
+    font-family: "Europa";
+    src: url("../src/assets/fonts/Europa-Light.woff2/Europa-Light.woff2.ttf")
+      format("truetype");
+  }
 }
