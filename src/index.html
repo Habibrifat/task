@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./custom.css" />
+  </head>
+  <body>
+    <!-- featured-product -->
+    <div class="featured-product">
+      <h2 class="text-4xl text-center p-5">Weekly Flash Deal</h2>
+      <div
+        class="featured-container grid grid-cols-2 text-center items-center justify-center max-[600px]:grid-cols-1"
+      >
+        <div class="featured-body mx-5">
+          <div class="grid grid-cols-4 py-3 px-3">
+            <div>
+              <span
+                class="text-6xl inline-block p-2 md:text-4xl max-[600px]:text-xl"
+                id="day"
+              ></span>
+              <div class="uppercase text-xl font-light">Days</div>
+            </div>
+            <div>
+              <span
+                class="text-6xl inline-block p-2 md:text-4xl max-[600px]:text-xl"
+                id="hour"
+              ></span>
+              <div class="uppercase text-xl font-light">Hours</div>
+            </div>
+            <div>
+              <span
+                class="text-6xl inline-block p-2 md:text-4xl max-[600px]:text-xl"
+                id="minute"
+              ></span>
+              <div class="uppercase text-xl font-light">Minutes</div>
+            </div>
+            <div>
+              <span
+                class="text-6xl inline-block p-2 md:text-4xl max-[600px]:text-xl"
+                id="second"
+              ></span>
+              <div class="uppercase text-xl font-light">second</div>
+            </div>
+          </div>
+          <div class="featured-text">
+            <p class="text-xs font-bold text-[#212326]">COCOBELLA</p>
+            <h2 class="text-2xl font-semibold pb-2">
+              Airy Clean Logo Embroidery Sweater Pants
+            </h2>
+            <span class="text-xl text-[#ff0000] pb-1"
+              ><del class="text-[#212326]">$10800</del> $8640</span
+            >
+            <p class="text-xs pb-3">Shipping calculated at checkout.</p>
+            <button
+              type="button"
+              class="p-2 m-2 border-0 bg-white shadow-xl text-xs"
+              disabled
+            >
+              X
+            </button>
+            <button
+              class="p-2 m-2 border-0 shadow-xl bg-black text-white text-xs hover:border border-solid border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-0 bg-white shadow-xl text-xs hover:border border-solid border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-0 bg-white shadow-xl text-xs hover:border border-solid border-black"
+              type="button"
+            >
+              ML
+            </button>
+            <p class="text-center text-sm p-2">
+              These Cocobella Airy Clean Logo Embroidery Sweater Pants are the
+              perfect athleisurewear. They are made to be airy and clean, with a
+              sporty yet casual look. The pants feature embroidery on the left
+              leg, and are made to be comfortable and flattering. Whether you're
+              hitting the gym or just running errands, these pants will have you
+              looking and feeling your best.
+            </p>
+          </div>
+          <div class="accordion-container m-9 md:w-full">
+            <hr class="w-full h-px bg-gray-700 border-0" />
+            <button
+              class="accordion active:bg-[#ccc] active:after:content-['\2212'] hover:bg-[#ccc] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
+            >
+              COMPOSITION
+            </button>
+            <div class="panel">
+              <p>52% Cotton 48% Polyester</p>
+            </div>
+            <hr class="w-full h-px bg-gray-700 border-0" />
+            <button
+              class="accordion active:bg-[#ccc] active:after:content-['\2212'] hover:bg-[#ccc] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
+            >
+              SHIPPING & RETURNS
+            </button>
+            <div class="panel">
+              <div class="py-2">
+                <p class="font-bold">Delivery</p>
+                <p>Free standard shipping</p>
+                <p class="py-1">See Shipping Policy</p>
+                <h4 class="font-bold">Returns</h4>
+                <p>1. Items received within 15 days from the purchase date.</p>
+                <p>
+                  2. Items received unused, undamaged and in original package.
+                </p>
+                <p>
+                  3. Return shipping fee is paid by buyer. See Return Policy
+                </p>
+                <br />
+                <p>See Return Policy</p>
+              </div>
+            </div>
+            <hr class="w-full h-px bg-gray-700 border-0" />
+          </div>
+          <span class="py-3 px-5 text-white bg-[#1a1b18]">Shop 20% Off</span>
+        </div>
+        <div class="featured-img">
+          <img class="p-5" src="./image/featured-img.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end of featured-product -->
+    <!-- Product Card -->
+    <div class="product-card">
+      <h2 class="text-center text-4xl p-5">What's New</h2>
+      <div class="buttons text-center text-base">
+        <button class="button-value" onclick="filterProduct('Clothing')">
+          Clothing
+        </button>
+        <button class="button-value" onclick="filterProduct('Shoes')">
+          Shoes
+        </button>
+        <button class="button-value" onclick="filterProduct('Bag')">Bag</button>
+        <button class="button-value" onclick="filterProduct('kids')">
+          kids
+        </button>
+        <button class="button-value" onclick="filterProduct('Beauty')">
+          Beauty
+        </button>
+        <button class="button-value" onclick="filterProduct('Swiming')">
+          swiming
+        </button>
+        <button class="button-value" onclick="filterProduct('Jewellery')">
+          Jewellery
+        </button>
+      </div>
+      <div id="products">
+        <div class="swiper mySwiper product-container">
+          <div
+            id="product-content"
+            class="swiper-wrapper flex justify-center items-center p-10 gap-2"
+          ></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- end Product Card -->
+
+    <!-- JavaScript -->
+    <script src="./style.js"></script>
+    <script src="./card.js"></script>
+  </body>
+</html>

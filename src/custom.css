@@ -1,0 +1,23 @@
+.swiper-pagination {
+  position: absolute;
+  top: 450px;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: rgb(3, 3, 3);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: rgb(2, 1, 7);
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: rgb(2, 1, 1);
+}
