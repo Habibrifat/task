@@ -17,7 +17,28 @@
     @apply text-[rgb(44,42,42)] border-b border-solid border-[rgb(44,42,42)];
   }
   .card {
-    @apply h-[400px] bg-white max-w-[18em] shadow-[0_5px_10px_rgba(0,0,0,0.1)] mt-[1em] mx-0 my-5 p-[1em] rounded-[5px];
+    @apply bg-white max-w-[18em] shadow-[0_5px_10px_rgba(0,0,0,0.1)] rounded-[5px];
+  }
+  .Product_subtitle {
+    @apply text-center font-light text-[10px] pb-1;
+  }
+  .product-name {
+    @apply text-sm font-semibold;
+  }
+  .product-price {
+    @apply before:content-['\20B9'] before:p-2 font-bold text-sm pt-5;
+  }
+  .s_button {
+    @apply border p-2 text-xs m-1;
+  }
+  .details_item {
+    @apply text-sm before:content-['\2192'] before:text-xl before:font-semibold before:p-1 tracking-widest uppercase;
+  }
+  .select_item {
+    @apply p-2 border border-black tracking-widest text-sm my-2 uppercase hover:bg-black hover:text-white transition-all duration-500;
+  }
+  .card-image {
+    @apply w-full p-0 m-0;
   }
 }
 
