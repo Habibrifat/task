@@ -138,42 +138,282 @@
     <!-- end of featured-product -->
 
     <!-- Product Card -->
-    <div class="product-card font-europa">
+    <div class="font-europa my-5">
       <h2 class="text-center text-4xl p-5">What's New</h2>
-      <div class="buttons text-center text-base">
-        <button class="button-value" onclick="filterProduct('Clothing')">
-          Clothing
-        </button>
-        <button class="button-value" onclick="filterProduct('Shoes')">
-          Shoes
-        </button>
-        <button class="button-value" onclick="filterProduct('Bag')">Bag</button>
-        <button class="button-value" onclick="filterProduct('kids')">
-          kids
-        </button>
-        <button class="button-value" onclick="filterProduct('Beauty')">
-          Beauty
-        </button>
-        <button class="button-value" onclick="filterProduct('Swiming')">
-          swiming
-        </button>
-        <button class="button-value" onclick="filterProduct('Jewellery')">
-          Jewellery
-        </button>
-      </div>
-      <div id="products">
-        <div class="swiper mySwiper product-container">
-          <div
-            id="product-content"
-            class="swiper-wrapper flex justify-center items-center flex-wrap p-10 gap-2"
-          ></div>
+      <div class="product-card">
+        <div class="product-categories text-center text-base">
+          <button class="category button-value active" data-category="Clothing">
+            Clothing
+          </button>
+          <button class="category button-value" data-category="Shoes">
+            Shoes
+          </button>
+          <button class="category button-value" data-category="Bag">Bag</button>
+          <button class="category button-value" data-category="kids">
+            kids
+          </button>
+          <button class="category button-value" data-category="Beauty">
+            Beauty
+          </button>
+          <button class="category button-value" data-category="Swiming">
+            Swiming
+          </button>
+          <button class="category button-value" data-category="Jewellery">
+            Jewellery
+          </button>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+
+        <div class="product-list-wrapper m-10">
+          <div
+            class="flex justify-center items-center flex-wrap p-10 gap-2 overflow-x-scroll"
+          >
+            <div class="card Bag" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/boho-woohoo-camel-leather-shoulder-bag-747652.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">BAG-WHITE</p>
+                <p class="product-price">58,00.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Clothing">
+              <div class="card-image">
+                <img
+                  src="./image/4-way-stretch-ankle-grey-active-pants-454401.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">RELAXED POLO COLLAR GREEN TOP</p>
+                <p class="product-price">75.00.02</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Clothing">
+              <div class="card-image">
+                <img
+                  src="./image/abstract-checkboard-side-split-black-skirt-212884.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">CLOTHING BAG-WHITE</p>
+                <p class="product-price">20,00.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Clothing">
+              <div class="card-image">
+                <img
+                  src="./image/abstract-checkboard-side-split-green-skirt-784606.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">RESTRO ROLL NECK RIB STRIPE TOP</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Clothing">
+              <div class="card-image">
+                <img
+                  src="./image/abstract-pop-holiday-two-piece-blue-shirt-shorts-set-259877.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">CARL LEGERFELD</p>
+                <p class="product-name">
+                  CONTRAST LOGO PRINT CHIMNEY COLLAR PINK SWEATER
+                </p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Shoes" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/alpine-hiker-composite-toe-lace-up-brown-leather-boots-338695.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">SHOES BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Shoes" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/all-inclusive-high-top-brown-leather-sneakers-831490.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">SHOES BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Shoes" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/airy-hook-casual-black-lace-up-leather-boots-449323.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">SHOES BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card kids" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/beacon-print-boy-blue-two-piece-tankini-set-722612.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">KIDS BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Beauty" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/airy-lip-gloss-dewy-mist-series-p306-756265.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">BEAUTY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Bag" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/boho-woohoo-black-leather-shoulder-bag-947981.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">BEAUTY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Bag" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/boho-woohoo-camel-leather-shoulder-bag-747652.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">BEAUTY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Bag" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/foggy-scene-brown-suede-leather-shoulder-bag-239774.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">BEAUTY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Jewellery" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/astronauts-bear-silver-long-chain-647133.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">JEWELLERY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Swiming" style="display: none">
+              <div class="card-image">
+                <img
+                  src="./image/amphibious-activity-navy-swim-shorts-514254.webp"
+                />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">JEWELLERY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+            <div class="card Swiming" style="display: none">
+              <div class="card-image">
+                <img src="./image/bat-man-black-swim-shorts-405435.webp" />
+              </div>
+              <div class="card-container text-center p-5">
+                <p class="Product_subtitle">COCOBELLA</p>
+                <p class="product-name">JEWELLERY BAG-WHITE</p>
+                <p class="product-price">52,0063.00</p>
+                <p class="s_button">S</p>
+                <p class="details_item">View Full Details</p>
+                <p class="select_item">Select This Item</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more product items as needed -->
+        </div>
       </div>
     </div>
-    <!-- end Product Card -->
+    <!-- Product Card -->
 
     <!-- JavaScript -->
     <script src="./style.js"></script>

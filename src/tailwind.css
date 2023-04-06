@@ -40,6 +40,9 @@
   .card-image {
     @apply w-full p-0 m-0;
   }
+  .card-container {
+    @apply flex flex-col flex-wrap;
+  }
 }
 
 @layer base {
