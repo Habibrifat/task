@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="./custom.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- featured-product -->
@@ -92,7 +100,7 @@
           <div class="accordion-container m-9 md:w-full">
             <hr class="w-full h-px bg-gray-700 border-0" />
             <button
-              class="accordion active:bg-[#ccc] active:after:content-['\2212'] hover:bg-[#ccc] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
+              class="accordion active:bg-[#FFFFFF] bg-white active:after:content-['\2212'] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
             >
               COMPOSITION
             </button>
@@ -101,7 +109,7 @@
             </div>
             <hr class="w-full h-px bg-gray-700 border-0" />
             <button
-              class="accordion active:bg-[#ccc] active:after:content-['\2212'] hover:bg-[#ccc] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
+              class="accordion active:bg-[#ffffff] bg-white active:after:content-['\2212'] after:content-['\002B'] after:text-[#777] after:font-bold after:float-right after:ml-1 text-xs"
             >
               SHIPPING & RETURNS
             </button>
@@ -162,7 +170,6 @@
             Jewellery
           </button>
         </div>
-
         <div class="product-list-wrapper m-10">
           <div
             class="flex justify-center items-center flex-wrap p-10 gap-2 overflow-x-scroll"
@@ -179,7 +186,9 @@
                 <p class="product-price">58,00.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton1" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Clothing">
@@ -194,7 +203,9 @@
                 <p class="product-price">75.00.02</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton2" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Clothing">
@@ -209,7 +220,9 @@
                 <p class="product-price">20,00.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton3" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Clothing">
@@ -224,7 +237,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton16" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Clothing">
@@ -241,7 +256,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton4" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Shoes" style="display: none">
@@ -256,7 +273,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton5" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Shoes" style="display: none">
@@ -271,7 +290,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton6" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Shoes" style="display: none">
@@ -283,10 +304,12 @@
               <div class="card-container text-center p-5">
                 <p class="Product_subtitle">COCOBELLA</p>
                 <p class="product-name">SHOES BAG-WHITE</p>
-                <p class="product-price">52,0063.00</p>
+                <p class="product-price">49,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton7" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card kids" style="display: none">
@@ -301,7 +324,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton8" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Beauty" style="display: none">
@@ -316,7 +341,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton9" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Bag" style="display: none">
@@ -331,7 +358,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton10" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Bag" style="display: none">
@@ -346,7 +375,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton11" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Bag" style="display: none">
@@ -361,7 +392,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton12" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Jewellery" style="display: none">
@@ -376,7 +409,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button class="select_item" id="showPopupButton13">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Swiming" style="display: none">
@@ -391,7 +426,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton14" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
             <div class="card Swiming" style="display: none">
@@ -404,7 +441,9 @@
                 <p class="product-price">52,0063.00</p>
                 <p class="s_button">S</p>
                 <p class="details_item">View Full Details</p>
-                <p class="select_item">Select This Item</p>
+                <button id="showPopupButton15" class="select_item">
+                  Select This Item
+                </button>
               </div>
             </div>
           </div>
@@ -415,8 +454,992 @@
     </div>
     <!-- Product Card -->
 
+    <!-- card-popup -->
+    <div class="popup1">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup1"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/boho-woohoo-camel-leather-shoulder-bag-747652.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton1"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">BAG-WHITE</h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup2">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup2"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/4-way-stretch-ankle-grey-active-pants-454401.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton2"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup3">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup3"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/abstract-checkboard-side-split-black-skirt-212884.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton3"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup4">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup4"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/abstract-pop-holiday-two-piece-blue-shirt-shorts-set-259877.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton4"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup5">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup5"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/alpine-hiker-composite-toe-lace-up-brown-leather-boots-338695.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton5"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup6">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup6"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/all-inclusive-high-top-brown-leather-sneakers-831490.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton6"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup7">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup7"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/airy-hook-casual-black-lace-up-leather-boots-449323.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton7"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup8">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup8"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/beacon-print-boy-blue-two-piece-tankini-set-722612.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton8"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup9">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup9"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/airy-lip-gloss-dewy-mist-series-p306-756265.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton9"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup10">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup10"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/boho-woohoo-black-leather-shoulder-bag-947981.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton10"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup11">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup11"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/boho-woohoo-camel-leather-shoulder-bag-747652.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton11"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup12">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup12"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/foggy-scene-brown-suede-leather-shoulder-bag-239774.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton12"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup13">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup13"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/astronauts-bear-silver-long-chain-647133.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton13"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">
+            Abstract Checkboard slide spilt green shirt
+          </h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup14">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup14"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/amphibious-activity-navy-swim-shorts-514254.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton14"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">JEWELLERY BAG-WHITE</h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup15">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup15"
+      >
+        <div class="popup-image">
+          <img src="./image/bat-man-black-swim-shorts-405435.webp" alt="" />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton15"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">JEWELLERY BAG-WHITE</h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup16">
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"
+      ></div>
+      <div
+        class="card-popup z-50 grid-cols-2 justify-around items-center font-europa w-3/5 m-auto hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg"
+        id="popup16"
+      >
+        <div class="popup-image">
+          <img
+            src="./image/abstract-checkboard-side-split-green-skirt-784606.webp"
+            alt=""
+          />
+        </div>
+        <div class="card-popup-description">
+          <button
+            id="closeButton16"
+            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded float-right"
+          >
+            X
+          </button>
+          <p class="text-sm text-[#212326] pt-2">cocobella</p>
+          <h2 class="text-3xl pb-2">JEWELLERY BAG-WHITE</h2>
+          <p class="text-2xl">TK 9,300. <sup>00</sup></p>
+          <p class="text-xs pt-2">shipping calculate as checkout</p>
+          <p>Title</p>
+          <div class="button-size">
+            <button
+              type="button"
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-black text-white shadow-xl text-sm hover:border border-solid hover:border-black"
+            >
+              S
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              M
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              L
+            </button>
+            <button
+              class="p-3 m-2 border-2 border-[#e0d9d9] bg-white shadow-xl text-sm hover:border border-solid hover:border-black"
+              type="button"
+            >
+              XL
+            </button>
+          </div>
+          <button class="add-to-card w-8/12">ADD to Cart</button>
+          <button class="add-to-card">
+            <span><i class="fa-regular fa-heart"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="./style.js"></script>
     <script src="./card.js"></script>
+    <script src="./popup.js"></script>
   </body>
 </html>
